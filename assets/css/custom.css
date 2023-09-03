@@ -1,0 +1,360 @@
+.service_div {
+  /* position: absolute; */
+  width: 476px;
+  height: 476px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  padding: 30% 20px 20px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hr_border {
+  width: 114px;
+  height: 1px;
+  /*Gray5*/ /*margin-top: -60%;
+  */
+  margin-left: 0px;
+  border: 1px solid #e0e0e0;
+  /*Insideautolayout*/
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+}
+
+.service_title {
+  /* width: auto;
+  height: 54px; */
+  /* padding: 48px 0px 328px 104px; */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  /* Gray 1 */
+
+  /* border-bottom: 1px solid #E0E0E0; */
+
+  color: #333333;
+}
+
+.service_description {
+  /* Web components are core parts of full stack mobile products. Our internal team can help you build Web Admins, Content Management Systems or small CRMS.. */
+  /* width: 304px;
+  height: 130px; */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 0px;
+  /* padding-top: 10px; */
+  /* text-align: left; */
+  color: #828282;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.service_div:hover {
+  background: linear-gradient(180deg, #1dd05d 0%, #019f49 100%);
+  /* color: #FFFFFF; */
+}
+.service_div p:hover {
+  color: #ffffff;
+}
+
+.all_service_color {
+  background: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  border-radius: 50px;
+  margin: 20px;
+  margin-left: 55px;
+  margin-top: 50px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 15px 30px;
+  border: 1px solid #f2f2f2;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.r-arrow-stick-circ {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  top: 4px;
+  left: 4px;
+}
+
+.r-arrow-stick-circ {
+  border-radius: 50%;
+  background: #22cb5b;
+}
+
+.r-arrow-stick-circ:before {
+  content: "";
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  -webkit-transform: translate(-50% -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.r-arrow-stick-circ:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  height: 2px;
+  background: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.work_email {
+  width: 210px;
+  height: 26px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  top: 25px;
+}
+
+.subscription .add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #4abebb;
+  color: #ffffff;
+  transition: width 0.35s ease-in-out, background 0.35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: #c0e02e;
+}
+
+.subscription .add-email::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: -10px;
+  /* identical to box height, or 130% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.subscription .add-email:hover {
+  border: 1px solid #ffffff;
+}
+
+.subscription .before-submit {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 53px;
+  left: -46px;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  position: absolute;
+  color: #22cb5b;
+
+  background: #ffffff;
+  border-radius: 43px;
+}
+
+.services_div {
+  box-sizing: border-box;
+
+  /* position: absolute; */
+  width: 100%;
+  height: 480px;
+  /* margin-left: -15px; */
+  padding: 20px 20px;
+  background: #ffffff;
+  border: 0.9375px solid #f2f2f2;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.all_service_title {
+  /* width: 600px;
+  height: 50px; */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  text-align: left;
+  /* padding: 35px 248px 15px 98px; */
+  margin: 0;
+  color: #333333;
+
+  /* Inside auto layout */
+
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+.service_para {
+  /* width: 450px;
+  height: 122px; */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  /* or 152% */
+  /* padding: 0px 98px 0px 98px; */
+
+  /* Gray 3 */
+
+  color: #828282;
+
+  /* Inside auto layout */
+
+  /* flex: none;
+  order: 2;
+  flex-grow: 0; */
+}
+
+.services_hr {
+  background-color: #e0e0e0;
+  width: 120px;
+  margin-left: 0;
+  /* margin-left: 98px;
+  margin-top: 62px; */
+}
+
+.modal-footer {
+  left: 50% !important;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .services_div {
+    margin-left: -15px;
+  }
+  .all_service_title {
+    padding: 35px 248px 15px 30px;
+  }
+
+  .service_para {
+    padding: 0px 98px 0px 30px;
+    width: 420px;
+  }
+
+  .services_hr {
+    margin-left: 30px;
+  }
+}
+
+.hr_hide {
+  background-color: white;
+  width: 200px;
+  margin-left: 5px;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    /*overflow-x: hidden;*/
+  }
+  .service_title {
+    padding: 130px 0px 328px 104px;
+    text-align: left;
+  }
+  .service_div,
+  .all_service {
+    margin-left: -40px;
+  }
+  .scrollshow {
+    padding-top: 90px !important;
+  }
+
+  .hr_hide {
+    display: none;
+  }
+}
